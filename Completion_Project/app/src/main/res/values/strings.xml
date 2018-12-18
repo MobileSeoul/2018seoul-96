@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="kakao_app_key">521523acf643849d42f04f985447e060</string>
+    <string name="kakao_scheme">kakao521523acf643849d42f04f985447e060</string>
+    <string name="kakaolink_host">kakaolink</string>
+    <string name="search">지역이름 입력</string>
+    <string name="AlarmSet1">⋄ 알람 설정을 하려면 상단의 스위치를 눌러주세요!</string>
+    <string name="AlarmSet2">⋄ 시간설정으로 알림정보를 받아보시려면\n 시계아이콘을 클릭하여 시간설정을 한 후 상단의 스위치를 켜주세요!\n
+    (푸쉬알림이 올 정보는 최근 측정 된 측정소 기준입니다.)</string>
+</resources>

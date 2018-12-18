@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+
+    <andbook.ecample.mun.Text
+        android:includeFontPadding="false"
+        android:id="@+id/textView12"
+        android:textColor="#424242"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_action_name"
+        android:id="@+id/sliding" />
+
+</LinearLayout>
+
+

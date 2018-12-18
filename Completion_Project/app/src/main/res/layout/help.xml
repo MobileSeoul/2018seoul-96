@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6faff"
+    android:orientation="vertical"
+
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+        <ImageButton
+            android:id="@+id/backbt3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:tint="#33b5e5"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_weight="1"
+
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/explain"
+            android:layout_width="0dp"
+            android:includeFontPadding="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="설명버튼"
+            android:textColor="#424242"
+            android:background="@color/color5"/>
+
+        <TextView
+            android:id="@+id/stategood"
+            android:layout_width="0dp"
+            android:includeFontPadding="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="1"
+            android:background="@color/color4"
+            android:gravity="center"
+            android:text="좋음"
+            android:textColor="#424242" />
+
+        <TextView
+            android:id="@+id/statesoso"
+            android:layout_width="0dp"
+            android:includeFontPadding="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="2"
+            android:background="@color/color3"
+            android:gravity="center"
+
+            android:text="보통"
+            android:textColor="#424242" />
+
+        <TextView
+            android:id="@+id/statebad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="3"
+            android:background="@color/color2"
+            android:includeFontPadding="false"
+            android:gravity="center"
+
+            android:text="나쁨"
+            android:textColor="#424242" />
+
+        <TextView
+            android:id="@+id/stateverybad"
+            android:layout_width="0dp"
+            android:includeFontPadding="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="4"
+            android:background="@color/color1"
+            android:gravity="center"
+            android:text="매우나쁨"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_weight="1"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:includeFontPadding="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:onClick="mOnclick"
+
+            android:text="통합지수"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:includeFontPadding="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="1"
+            android:background="@color/color4"
+            android:gravity="center"
+
+            android:text="0~50"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="2"
+            android:includeFontPadding="false"
+            android:background="@color/color3"
+            android:gravity="center"
+
+            android:text="51~100"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="3"
+            android:includeFontPadding="false"
+            android:background="@color/color2"
+            android:gravity="center"
+
+            android:text="101~250"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:layout_column="4"
+            android:background="@color/color1"
+            android:gravity="center"
+
+            android:text="251~"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:padding="2dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:onClick="mOnclick"
+
+            android:text="미세먼지"
+            android:includeFontPadding="false"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="1"
+            android:includeFontPadding="false"
+            android:background="@color/color4"
+            android:gravity="center"
+
+            android:text="0~30"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="2"
+            android:includeFontPadding="false"
+            android:background="@color/color3"
+            android:gravity="center"
+
+            android:text="31~80"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="3"
+            android:includeFontPadding="false"
+            android:background="@color/color2"
+            android:gravity="center"
+
+            android:text="81~150"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:layout_column="4"
+            android:background="@color/color1"
+            android:gravity="center"
+
+            android:text="151~"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:padding="2dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="0"
+            android:includeFontPadding="false"
+            android:layout_row="4"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:onClick="mOnclick"
+
+            android:text="초미세먼지"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="1"
+            android:background="@color/color4"
+            android:includeFontPadding="false"
+            android:gravity="center"
+
+            android:text="0~15"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="2"
+            android:includeFontPadding="false"
+            android:background="@color/color3"
+            android:gravity="center"
+
+            android:text="16~35"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="3"
+            android:background="@color/color2"
+            android:includeFontPadding="false"
+            android:gravity="center"
+
+            android:text="36~75"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="4"
+            android:includeFontPadding="false"
+            android:background="@color/color1"
+            android:gravity="center"
+
+            android:text="76~"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:padding="2dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="0"
+            android:includeFontPadding="false"
+            android:layout_row="5"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:onClick="mOnclick"
+
+            android:text="오존"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="1"
+            android:background="@color/color4"
+            android:gravity="center"
+
+            android:text="0~0.03"
+            android:includeFontPadding="false"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="2"
+            android:includeFontPadding="false"
+            android:background="@color/color3"
+            android:gravity="center"
+
+            android:text="0.03~0.09"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="3"
+            android:includeFontPadding="false"
+            android:background="@color/color2"
+            android:gravity="center"
+
+            android:text="0.09~0.15"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="4"
+            android:includeFontPadding="false"
+            android:background="@color/color1"
+            android:gravity="center"
+
+            android:text="0.15~"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:padding="2dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="0"
+            android:layout_row="6"
+            android:includeFontPadding="false"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:onClick="mOnclick"
+
+            android:text="이산화질소"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="1"
+            android:includeFontPadding="false"
+            android:background="@color/color4"
+            android:gravity="center"
+
+            android:text="0~0.03"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="2"
+            android:includeFontPadding="false"
+            android:background="@color/color3"
+            android:gravity="center"
+
+            android:text="0.03~0.06"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="3"
+            android:includeFontPadding="false"
+            android:background="@color/color2"
+            android:gravity="center"
+
+            android:text="0.06~0.20"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="4"
+            android:includeFontPadding="false"
+            android:background="@color/color1"
+            android:gravity="center"
+
+            android:text="0.20~"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:padding="2dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:layout_column="0"
+            android:layout_row="7"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:onClick="mOnclick"
+
+            android:text="일산화탄소"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="1"
+            android:includeFontPadding="false"
+            android:background="@color/color4"
+            android:gravity="center"
+
+            android:text="0~2"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="2"
+            android:includeFontPadding="false"
+            android:background="@color/color3"
+            android:gravity="center"
+
+            android:text="2~9"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="3"
+            android:includeFontPadding="false"
+            android:background="@color/color2"
+            android:gravity="center"
+
+            android:text="9~15"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="4"
+            android:includeFontPadding="false"
+            android:background="@color/color1"
+            android:gravity="center"
+
+            android:text="15~"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:padding="2dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="0"
+            android:includeFontPadding="false"
+            android:layout_row="8"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:onClick="mOnclick"
+
+            android:text="아황산가스"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="1"
+            android:background="@color/color4"
+            android:gravity="center"
+
+            android:text="0~0.02"
+            android:includeFontPadding="false"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="2"
+            android:background="@color/color3"
+            android:gravity="center"
+            android:includeFontPadding="false"
+
+            android:text="0.02~0.05"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="3"
+            android:includeFontPadding="false"
+            android:background="@color/color2"
+            android:gravity="center"
+
+            android:text="0.05~0.15"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <andbook.ecample.mun.Text
+            android:includeFontPadding="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_column="4"
+            android:background="@color/color1"
+            android:gravity="center"
+
+            android:text="0.15~"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <andbook.ecample.mun.Text
+        android:padding="@dimen/activity_horizontal_margin"
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:text="Tip. 설명 버튼을 눌러주세요!"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:textColor="#424242"
+        android:background="#e6faff"/>
+</LinearLayout>
+
+
+</LinearLayout>
